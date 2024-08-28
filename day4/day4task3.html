@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+  background-color: orange;
+  height: 350px;
+  width: 400px;
+  margin-top: 150px;
+  margin-left: 430px;
+}
+.content1{
+  display: none;
+  position: absolute;
+  margin-left: 40px;
+  font-family: 'Times New Roman', serif;
+  font-size: larger;
+  background-color:rgb(228, 225, 220);
+  padding: 30px;
+  border: 2px solid orange;
+  z-index: 100;
+}
+button{
+    height: 50px;
+    width: 80px;
+    border: 1px solid orangered;
+    margin: 40px;
+
+}
+   button:focus + .content1,
+   button:hover + .content1 {
+  display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="button">☰</button>
+        <div class="content1">
+       <p>Home</p>
+       <p>About</p>
+       <p>Contact</p>
+       </div>
+    </div>   
+</body>
+</html>

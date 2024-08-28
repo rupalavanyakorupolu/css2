@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .b1,.b2,.b3{
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 250px;
+            margin-left: 10px;
+            border: 1px solid black;
+            box-shadow: 2px 5px 5px 0px black ;
+        }
+        .b1{
+            background-color: brown;
+            animation-name: bounce;
+            /* animation-range-start: 50%; */
+            animation: bounce 2s ease-in infinite alternate;
+        }
+        .b2{
+            background-color: cadetblue;
+            animation-name: bounce;
+            animation: bounce 2s ease-out infinite alternate;
+        }
+        .b3{
+            background-color: blueviolet;
+            animation-name: bounce;
+            animation:bounce 2s ease-in-out infinite alternate;            
+            /* animation: bounce 2s infinite; */
+        }
+        .s1,.s2,.s3{
+            width: 20px;
+            height: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 10px;
+            background-color: green;
+            border: 2px solid black;
+            box-shadow: 0px 3px 7px 0px black ;
+        }
+        .s1{
+            animation-name: scaleAnimation;
+            animation:scaleAnimation 1s ease-in-out infinite alternate;
+            /* transition: all 2s; */
+            animation-delay: 0.3s;
+        }
+        .s2{
+            animation-name: scaleAnimation;
+            animation:scaleAnimation 1s ease-in-out infinite alternate;
+            /* transition: all 2s; */
+            animation-delay: 0.6s;
+
+        }
+        .s3{
+            animation-name: scaleAnimation;
+            animation:scaleAnimation 1s ease-in-out infinite alternate;
+            /* transition: all 2s; */
+            animation-delay: 0.9s;
+        }
+        @keyframes bounce {
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-150px);
+            }
+        }
+        @keyframes scaleAnimation {
+            0%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            50%{
+                transform: scale(1.4);
+                opacity: 0.5;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 1;
+  
+            }
+        }
+    </style>
+</head>
+<body>
+<div><center>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div></center>
+</div>
+<div><center>
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s3"></div></center>
+</div>
+</body>
+</html>
